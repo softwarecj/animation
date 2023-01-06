@@ -1,0 +1,113 @@
+* {
+  font-family: 'Kite One', sans-serif;
+  font-size: 25px;
+
+}
+
+.grid-container {
+height: 250vh; /*View height will take up the whole screen*/
+display: grid;
+grid-gap: 40px;
+grid-template-columns: minmax(auto auto auto); /*Width of the columns*/
+grid-template-rows: minmax(auto auto); /*Height of the colmns, minmax is to autofill but still defaulty to 200px*/
+grid-template-areas: "sidebar content"; /* layout of grids */
+background-image: url('../img/resumepaper2.jpg');
+background-size: cover;
+background-attachment: fixed; /*with scrolling mechanism, the background doesn't move with the element*/
+
+  
+}
+img {
+  border-radius: 50%;
+  margin:70px; /*outside element close to border*/
+  
+}
+
+
+.items {
+  color: #fff
+}
+.item-1 {
+  grid-area: content; /* grid item-1 will be on left */
+}
+.list {
+display: grid;
+grid-template-columns: repeat(2,auto); /*Two rows of an ul*/
+}
+
+.list2 {
+  padding: 20px;
+  margin-top: -20px;
+  space: 20px;
+  line-height: 300%;
+}
+.wrap-border {
+  border: solid 1px;
+  padding: 20px; /*space inside an element*/
+  margin: 10px;
+  background-image: url('../img/resumepaper.jpeg');
+  background-attachment: fixed;
+  color: #36486b
+
+}
+
+body {
+  background-color: #F8F0E3;
+}
+
+.contact, .social {
+  text-transform: uppercase;
+  font-size: 50px;
+  border-top: 5px solid white;
+  padding: 20px;
+}
+
+.education {
+  border-bottom: 1px solid white;
+}
+
+.icon i, .icon2 i, .icon3 i, .icon4 i {
+font-size: 50px;
+align: left;
+padding: 20px;
+margin-top: -10px;
+
+}
+.icon, .icon2, .icon3, .icon4 {
+display: flex;
+gap: 15px;
+
+}
+
+.icon a, .icon2 a, .icon3 a, .icon4 a, .list2 li a {
+  color: white;
+}
+
+.icon a:hover, .icon2 a:hover,.icon3 a:hover, .icon4 a:hover, .list2 li a:hover {
+  color: orange;
+}
+
+.site {
+font-style: italic;
+font-size: 20px;
+}
+
+@media only screen and (min-width:0px) and (max-width: 1180px) {
+  body/*{background-color: pink;}*/
+  {background-image: url('../img/resumepaper2.jpg');
+  height: 100vh;
+  width: 200vw;
+  font-size: 1rem;
+}
+  .grid-container{grid-gap: 1em;
+    justify-content: left;
+  }
+  .list {
+    display: inline-block; /* So that the ul li will not display in grid columns*/
+    /*display: grid;
+    align-items: center;*/
+  }
+  }
+  
+
+ 
