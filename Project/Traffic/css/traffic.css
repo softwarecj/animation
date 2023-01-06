@@ -1,0 +1,172 @@
+body {
+  background-image: url('../img/trafficgo.png'), white;
+  background-color: lightskyblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  color: white;
+  font-size: 5em;
+}
+
+
+ .animate__blink {
+    display: flex;
+    flex-direction: column;
+    gap: 4.125rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1.9em;
+
+  
+}
+.poll {
+  width: 500px;
+  height: 1000px;
+  background-color: black;
+  position: absolute;
+  border: 20px solid gray;
+  border-radius: 25px;
+}
+
+.red {
+
+  width: 260px;
+  height: 260px;
+  position: relative;
+  filter: brightness(.4);
+
+  border-radius: 8rem;
+  background-color: gray;
+    box-shadow: 0 0 6em;
+
+  animation-name: redlights;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+
+.yellow {
+  width: 260px;
+  height: 260px;
+  border-radius: 8rem;
+      position: relative;
+filter: brightness(.5);
+  background-color: gray;
+  box-shadow: 0 0 10em;
+  animation-name: yellowlights;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /*animation-delay: 5s;*/
+
+
+}
+
+.green {
+  width: 260px;
+  height: 260px;
+      position: relative;
+filter: brightness(.5);
+  border-radius: 8rem;
+  box-shadow: 0 0 5em green, 0 0 5em green, 0 0 5em white;
+  background-color: gray;
+  animation-name: greenlights;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+ /*animation-delay: 10s;*/
+
+
+}
+
+  @keyframes greenlights {
+43%{background-color:gray;
+        box-shadow: 0 0 25em;
+        filter: brightness(.5);
+
+}
+44%{background-color: green;
+      box-shadow: 0 0 .5em green;
+      filter: brightness(1.75);
+
+}
+
+100%{background-color: green;
+      box-shadow: 0 0 .5em green;
+      filter: brightness(1.75);
+}
+
+}
+
+@keyframes redlights {
+ 
+  21% {background-color:gray;
+      box-shadow: 0 0 25em;
+      filter: brightness(.5);
+
+}
+  23%{background-color: red;
+    box-shadow: 0 0 .5em red;
+     filter: brightness(1.75);
+
+
+  }
+    41%{background-color: red;
+    box-shadow: 0 0 .5em red;
+     filter: brightness(1.75);
+     
+
+
+  }
+  42% {background-color:gray;
+      box-shadow: 0 0 25em;
+            filter: brightness(.5);
+
+  }
+}
+
+@keyframes yellowlights {
+  0%{background-color: #FFD400;
+        box-shadow: 0 0 0.5em yellow;
+          filter: brightness(2);
+
+  }
+  19%{background-color: #FFD400;
+          box-shadow: 0 0 0.5em yellow;
+
+          filter: brightness(2);
+
+  }
+  20% {background-color:gray;
+        box-shadow: 0 0 25em;
+
+              filter: brightness(.50);
+
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+  body {
+    height: 50vh;
+    width: 100vw;
+    font-size: 1em;
+  }
+  .red, .green, .yellow {
+    height: 100px;
+    width: 100px;
+    border-radius: 4rem;
+  }
+  .poll {
+    width: 200px;
+  height: 500px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 1280px) {
+  .poll {
+    width: 100px;
+    height: 300px;
+  }
+   .red, .green, .yellow {
+    height: 50px;
+    width: 50px;
+    border-radius: 2rem;
+  }
+  }
