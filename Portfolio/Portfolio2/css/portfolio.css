@@ -85,7 +85,7 @@ a {
   display: grid;
   grid-template-columns: minmax(auto, auto);
   grid-template-rows: minmax(auto, auto);
-  margin-bottom: 80em;
+  margin-bottom: 100em;
 
 }
 
