@@ -1,240 +1,53 @@
-@font-face{
-  font-family: neon2;
-  src: url(neon2.ttf);
-  
-}
-html {
-  height: 100vh;
-  width: 100vw;
-}
-body {
-  background-image: url(../css/brick.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-font-family: neon2;
-
-}
-h, p{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 8em;
-  color: #ff0080;
-  text-shadow: 0 0 .45em, 0 0 .25em #FFF7, 0 0 4em yellow; /*3rd element is the blur radius*/
-  text-shadow: hsl(0 0 100%), hsl(0 0 100%);/*hue, saturation, lightness*/
-}
-
-.portfolio-container{
-display: grid;
-grid-template-columns: repeat(2, auto);
-grid-template-rows: auto, auto;
-grid-gap: 3em;
-margin: 9rem;
-font-size: 5em;
-color: #ff0080;
-text-shadow: 0 0 .45em, 0 0 .25em #FFF7; /*3rd element is the blur radius*/
-text-shadow: hsl(0 0 100%), hsl(0 0 100%);/*hue, saturation, lightness*/
-justify-content: center;
-align-content: center;
-margin-bottom: 10em;
-}
-
-.container1, .container2,.container3,.container4,.container1,.container5,.container6{
-border: .5rem solid;
-border-radius: 25px;
-box-shadow:  inset 0 0 .4em, 0 0 .4em;
-width: 23rem;
-text-align: center;
-
-}
-.container2, .container3 {
-width: 30rem;
-}
-
-.container2 {
-height: 50%;
-}
-
-.container1:hover, .container2:hover, .container3:hover, .container4:hover, .container5:hover, .container6:hover {
-    background: #ff0080;
-    color: black;
-    text-shadow: none;
-    border: .5rem solid #ff0080;
-    box-shadow: 0 0 5em #ff0080, 0 0 5em #ff0080, 0 0 5em #ff0080;
-    
-
-}
-
-.css1:hover {
-    text-shadow: none;
-    border: .5rem solid #32CD32;
-    box-shadow: 0 0 5em #32CD32, 0 0 5em #ff0080, 0 0 5em #32CD32;
-}
-
-.css2:hover {
-  text-shadow: none;
-    border: .5rem solid blue;
-    box-shadow: 0 0 5em blue, 0 0 5em blue, 0 0 5em blue;
-}
-a {
-  text-decoration: none;
-  color: #ff0080;
-  cursor: pointer;
-}
-.container-1, .container-2, .container-3, .container-4, .container-5, .container-6 {
-  display: grid;
-  grid-template-columns: minmax(auto, auto);
-  grid-template-rows: minmax(auto, auto);
-  margin-bottom: 80em;
-
-}
-
-.container-css a {
-  text-decoration: none;
-  color: green;
-  cursor: pointer;
-  
-}
-div a:hover {
-  color: black;
-  
-}
-
-#section1 {
-  color: #32CD32;
-  font-size: 5.5em;
-  display: flex;
-  text-align: center;
-  margin: 1em;
-}
-
-#section2, #section2 p1 {
-  color: blue;
-  font-size: 5.5em;
-  display: flex;
-  text-align: center;
-  /*margin: 6em 9em 100px;*/
-  }
-
-#section3 {
-  color: yellow;
-  font-size: 5.5em;
-  display: flex;
-  text-align: right;
-  /*margin: 8em 9em 100px;*/
-}
-
-#section4 {
-  color: purple;
-  font-size: 5.5em;
-  display: flex;
-  text-align: right;
-  /*margin: 6em 9em 100px;*/
-}
-
-#section5 {
-  color: orange;
-  font-size: 5.5em;
-  display: flex;
-  text-align: right;
-  /*margin: 6em 9em 100px;*/
-}
-
-#section6 {
-  color: white;
-  font-size: 5.5em;
-  display: flex;
-  text-align: right;
-  /*margin: 6em 9em 100px;*/
-}
-
-button{
-  border: none;
-  background: none;
-  font-size: 30px;
-}
-
-.container-css button a {
-  color: white;
-}
-.container-css {
-  display: grid;
-  grid-template-columns: 1 auto;
-  grid-template-rows: auto auto;
-  justify-content: start;
-  align-content: center;
-  margin-left: 2em;
-  gap: 5em
-
-  
-}
-.css1 {
-border: .1rem solid;
-border-radius: 25px;
-box-shadow:  inset 0 0 .4em, 0 0 .4em;
-color: #32CD32;
-width: 20rem;
-height: 20rem;
-background-image: url('../css/traffic.jpeg');
-background-size: cover;
-background-position: center;
-
-}
-.css2 {
-border: blue .1rem solid;
-border-radius: 25px;
-box-shadow:  inset blue 0 0 .4em, 0 0 .4em;
-color: blue;
-width: 20rem;
-height: 20rem;
-background-image: url('../css/digital.png');
-background-size: cover;
-background-position: center;
-
-}
-
-.css3, .css4, .css5, .css6{
-border: .1rem solid;
-border-radius: 25px;
-box-shadow:  inset 0 0 .4em, 0 0 .4em;
-color: yellow;
-width: 20rem;
-height: 20rem;
-background-image: url('../css/comingSoon.jpg');
-background-size: cover;
-background-position: center;
-  }
-  
-  
-p1{
-  font-size: 2rem;
-  color: #32CD32;
-}
-
-.styleOne a{
-  font-size: 2rem;
-  color: blue;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 800px) {
- body {
-   margin-left: 500px;
-   padding: 0 -500rem;
-  
- }
-
- #section1,  #section2,  #section3,  #section4,  #section5,  #section6 {
-   margin-left: -5em;
-   
-}
-#section2 {
-  margin-left: -2em;
-}
-.portfolio-container {
-  margin-bottom: 20em;
-  font-size: 6em;
-}
-.container-1, .container-2, .container-3, .container-4, .container-5, .container-6 {
-margin-bottom: 150em;
-}
-}
+<!Doctype html>
+<html lang= 'en'>
+  <head>
+    <meta carset='UTF-8'>
+    <meta name='viewport' content='width=device-width' initial-scale='1.0'>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href='css/portfolio.css' rel='stylesheet'>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <button><a href='../../Portfolio/index.html'>
+Go Back</a></button>
+    <h>PORTFOLIO</h>
+    <div class='portfolio-container'>
+      <div class='container1'><a href='#section1'>CSS & HTML</a></div>
+      <div class='container2'><a href='#section2'>JAVASCRIPT</a></div>
+       <div class='container3'><a href='#section3'>BOOTSTRAP</a></div>
+      <div class='container5'><a href='#section4'>NODE.JS</a></div>
+      <div class='container5'><a href='#section5'>C##</a></div>
+      <div class='container6'><a href='#section6'>CLIENTS</a></div>
+    </div>
+        <div class='container-css'>
+          <div class='container-1'>
+      <p id='section1'>CSS & HTML<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+      <a href='../Traffic/traffic.html'><div class='css1' alt='screensaver'></div></a>
+      <p1><a href='../Traffic/traffic.html'>Traffic Lights</a></p1>
+      <p1><a href= 'https://github.com/softwarecj/animation/tree/main/Portfolio/Traffic'>GITHUB CODE: Click Here</a></p1>
+            </div>
+          <div class='container-2'>
+      <p id='section2'>JAVASCRIPT<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+      <a href='../SimpleClock/clock.html'><div class='css2'></div></a>
+      <p1 class='styleOne'><a href='../SimpleClock/clock.html'>Digital CLock</a></p1>
+      <p1 class='styleOne'><a href= 'https://github.com/softwarecj/animation/tree/main/Portfolio/SimpleClock'>GITHUB CODE: Click Here</a></p1>
+      </div>
+                  <div class='container-3'>
+      <p id='section3'>BOOTSRAP<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+      <a href='../Portfolio2/index.html'><div class='css3'></div></a>
+                  </div>
+                   <div class='container-4'>
+      <p id='section4'>NODE.JS<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+      <a href='../Portfolio2/index.html'><div class='css4'></div></a>
+                  </div>
+                  <div class='container-5'>
+     <p id='section5'>C##<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+            <a href='../Portfolio2/index.html'><div class='css5'></div></a>
+                  </div>
+                  <div class='container-6'>
+     <p id='section6'>CLIENTS<button><a href= '../Portfolio2/index.html'>Top &#8593;</a></button></p>
+           <a href='../Portfolio2/index.html'><div class='css6'></div></a>
+                  </div>
+    </div>
+  </body>
+</html>
