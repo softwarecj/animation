@@ -77,6 +77,13 @@ a {
   color: #ff0080;
   cursor: pointer;
 }
+.container-1, .container-2, .container-3, .container-4, .container-5, .container-6 {
+  display: grid;
+  grid-template-columns: minmax(auto, auto);
+  grid-template-rows: minmax(auto, auto);
+  margin-bottom: 80em;
+
+}
 
 .container-css a {
   text-decoration: none;
@@ -97,12 +104,12 @@ div a:hover {
   margin: 1em;
 }
 
-#section2 {
+#section2, #section2 p1 {
   color: blue;
   font-size: 5.5em;
   display: flex;
-  text-align: right;
-  margin: 6em 9em 100px;
+  text-align: center;
+  /*margin: 6em 9em 100px;*/
   }
 
 #section3 {
@@ -110,7 +117,7 @@ div a:hover {
   font-size: 5.5em;
   display: flex;
   text-align: right;
-  margin: 8em 9em 100px;
+  /*margin: 8em 9em 100px;*/
 }
 
 #section8 {
@@ -118,7 +125,7 @@ div a:hover {
   font-size: 5.5em;
   display: flex;
   text-align: right;
-  margin: 6em 9em 100px;
+  /*margin: 6em 9em 100px;*/
 }
 
 #section5 {
@@ -126,7 +133,7 @@ div a:hover {
   font-size: 5.5em;
   display: flex;
   text-align: right;
-  margin: 6em 9em 100px;
+  /*margin: 6em 9em 100px;*/
 }
 
 #section6 {
@@ -134,7 +141,7 @@ div a:hover {
   font-size: 5.5em;
   display: flex;
   text-align: right;
-  margin: 6em 9em 100px;
+  /*margin: 6em 9em 100px;*/
 }
 
 button{
@@ -152,6 +159,8 @@ button{
   grid-template-rows: auto auto;
   justify-content: start;
   align-content: center;
+  margin-left: 2em;
+  gap: 5em
 
   
 }
@@ -201,4 +210,24 @@ p1{
 .styleOne a{
   font-size: 2rem;
   color: blue;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+ body {
+
+   margin-left: 500px;
+   padding: 0 -500rem;
+  
+ }
+ .portfolio-container{
+padding: 10px 0 0 -100px;
+font-size: 3em;
+}
+ #section1,  #section2,  #section3,  #section4,  #section5,  #section6 {
+   margin-left: -5em;
+   
+}
+#section2 {
+  margin-left: -2em;
+}
 }
